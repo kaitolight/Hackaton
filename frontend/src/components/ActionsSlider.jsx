@@ -4,20 +4,22 @@ import "../styles/Slider.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import SliderData from "./SliderData";
 
-function ActionsSlider({ slides }) {
+function ActionsSlider({ slides, pullResult }) {
   const [current, setCurrent] = useState(0);
   const { length } = slides.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
+  // eslint-disable-next-line no-restricted-syntax
+  console.log(current);
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return current + 1;
+  if (pullResult.length === 0) {
+    return null;
   }
 
   return (
@@ -42,6 +44,7 @@ function ActionsSlider({ slides }) {
 
 ActionsSlider.propTypes = {
   slides: PropTypes.arrayOf.isRequired,
+  pullResult: PropTypes.arrayOf.isRequired,
 };
 
 export default ActionsSlider;

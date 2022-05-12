@@ -1,18 +1,18 @@
 .result-box {
     margin: auto;
-    width: 75vw;
-    border: 1px solid white; 
+    width: 85vw;
     padding: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
 }
 
 .result-title {
     text-align: center;
-    
-    font-size: 5rem;
+    font-size: clamp(1.2rem, 5.5vw, 5rem);
 }
 
-ul {
-    list-style: none;
+li {
+    padding-bottom: 0.5rem;
+    list-style: inside;
 }
 
 .result-aqi, .result-time {
@@ -25,12 +25,25 @@ ul {
 
 .result-flex {
     display: flex; 
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .result-first, .result-second {
-    width: 45%;
+    width: 90%;
     border: 1px solid white;
     padding: 1rem;
+}
+@media (min-width: 911.99px) {
+    .result-flex {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .result-first, .result-second {
+        width: 45%;
+        height: 40vh;
+    }
 }
 

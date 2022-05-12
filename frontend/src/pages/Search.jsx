@@ -12,7 +12,7 @@ function Search() {
     <div>
       <SearchBar setPullResult={setPullResult} />
       <ResultCard pullResult={pullResult} />
-      <ActionsSlider slides={SliderData} />
+      <ActionsSlider slides={SliderData} pullResult={pullResult} />
     </div>
   );
 }

@@ -6,6 +6,9 @@ export default function ResultCard({ pullResult }) {
     return <h2 className="result-none">You have not chosen a city yet!</h2>;
   }
 
+  // eslint-disable-next-line no-restricted-syntax
+  console.log(pullResult);
+
   return (
     <div className="result-box">
       <h3 className="result-title">
@@ -21,9 +24,18 @@ export default function ResultCard({ pullResult }) {
               {pullResult.time && pullResult.time.s}
             </span>
           </p>
-          <p>Local measurement time : {pullResult.time && pullResult.time.s}</p>
+          <div>
+            <h4>Here are the different stations used to collect the data : </h4>
+            <ul>
+              {pullResult &&
+                pullResult.attributions.map((station) => {
+                  return <li>{station.name}</li>;
+                })}
+            </ul>
+          </div>
         </div>
         <div className="result-second">
+          <h4>The different data to calculate the AQI :</h4>
           <ul>
             <li>
               {pullResult.iaqi && pullResult.iaqi.pm25.v
@@ -41,21 +53,21 @@ export default function ResultCard({ pullResult }) {
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.no2.v
-                ? `The current amount of Nitrogen dioxide (PM10) in ${
+                ? `The current amount of Nitrogen dioxide (NO2) in ${
                     pullResult.city && pullResult.city.name
                   } is ${pullResult.iaqi.no2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.so2.v
-                ? `The current amount of Sulfur dioxide (PM10) in ${
+                ? `The current amount of Sulfur dioxide (SO2) in ${
                     pullResult.city && pullResult.city.name
                   } is ${pullResult.iaqi.so2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.o3.v
-                ? `The current amount of Ozone (PM10) in ${
+                ? `The current amount of Ozone (O3) in ${
                     pullResult.city && pullResult.city.name
                   } is ${pullResult.iaqi.o3.v} μg/m3`
                 : null}
