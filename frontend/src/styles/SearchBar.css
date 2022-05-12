@@ -1,6 +1,8 @@
 input {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5em;
+    margin-top: 1em; 
+    margin-bottom: 1em;
     width: 25%;
     height: 35px;
 }
+
