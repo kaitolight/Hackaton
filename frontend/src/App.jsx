@@ -4,11 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Research from "./pages/Research";
 import Nav from "./components/Nav";
+import Search from "@pages/Search";
+
 
 import "./App.css";
 
 function App() {
   return (
+
     <Router>
       <div className="App">
         <Nav />
@@ -17,11 +20,14 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/Research" element={<Research />} />
         </Routes>
       </div>
-    </Router>
+      </Router>
+
   );
 }
 
 export default App;
+
