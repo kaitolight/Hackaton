@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
-export default function SearchBar() {
+export default function SearchBar({ setPullResult }) {
   const [cityName, setCityName] = useState("");
-  const [pullResult, setPullResult] = useState([]);
 
   const getCity = (city) => {
     if (city.length >= 1) {
@@ -20,11 +20,6 @@ export default function SearchBar() {
     getCity(cityName);
   };
 
-  useEffect(() => {
-    // eslint-disable-next-line no-restricted-syntax
-    console.log(pullResult);
-  }, [pullResult]);
-
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -37,3 +32,7 @@ export default function SearchBar() {
     </form>
   );
 }
+
+SearchBar.propTypes = {
+  setPullResult: PropTypes.func.isRequired,
+};
