@@ -1,3 +1,12 @@
+import React from "react";
+
+import RedirectionButton from "../components/RedirectionButton";
+
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <div>HOME</div>
+      <RedirectionButton />
+    </>
+  );
 }

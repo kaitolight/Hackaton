@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 
+import "../styles/SearchBar.css";
+
 export default function SearchBar({ setPullResult }) {
   const [cityName, setCityName] = useState("");
 
