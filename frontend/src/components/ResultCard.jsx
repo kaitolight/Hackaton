@@ -25,51 +25,55 @@ export default function ResultCard({ pullResult }) {
             </span>
           </p>
           <div>
-            <h4>Here are the different stations used to collect the data : </h4>
+            <h4 className="result-secondtitle">
+              Here are the different stations used to collect the data :{" "}
+            </h4>
             <ul>
               {pullResult &&
                 pullResult.attributions.map((station) => {
-                  return <li>{station.name}</li>;
+                  return <li key={station.url}>{station.name}</li>;
                 })}
             </ul>
           </div>
         </div>
         <div className="result-second">
-          <h4>The different data to calculate the AQI :</h4>
+          <h4 className="result-secondtitle">
+            The different data to calculate the AQI :
+          </h4>
           <ul>
             <li>
               {pullResult.iaqi && pullResult.iaqi.pm25.v
-                ? `The current amount of Fine particulate matter (PM2.5) in ${
+                ? `Fine particulate matter (PM2.5) in ${
                     pullResult.city && pullResult.city.name
-                  } is ${pullResult.iaqi.pm25.v} μg/m3`
+                  } : ${pullResult.iaqi.pm25.v} μg/m3`
                 : null}{" "}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.pm10.v
-                ? `The current amount of Coarse particulate matter (PM10) in ${
+                ? `Coarse particulate matter (PM10) in ${
                     pullResult.city && pullResult.city.name
-                  } is ${pullResult.iaqi.pm10.v} μg/m3`
+                  } : ${pullResult.iaqi.pm10.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.no2.v
-                ? `The current amount of Nitrogen dioxide (NO2) in ${
+                ? `Nitrogen dioxide (NO2) in ${
                     pullResult.city && pullResult.city.name
-                  } is ${pullResult.iaqi.no2.v} μg/m3`
+                  } : ${pullResult.iaqi.no2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.so2.v
-                ? `The current amount of Sulfur dioxide (SO2) in ${
+                ? `Sulfur dioxide (SO2) in ${
                     pullResult.city && pullResult.city.name
-                  } is ${pullResult.iaqi.so2.v} μg/m3`
+                  } : ${pullResult.iaqi.so2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.o3.v
-                ? `The current amount of Ozone (O3) in ${
-                    pullResult.city && pullResult.city.name
-                  } is ${pullResult.iaqi.o3.v} μg/m3`
+                ? `Ozone (O3) in ${pullResult.city && pullResult.city.name} : ${
+                    pullResult.iaqi.o3.v
+                  } μg/m3`
                 : null}
             </li>
           </ul>
