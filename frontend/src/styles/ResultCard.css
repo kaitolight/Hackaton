@@ -15,6 +15,22 @@ ul {
     list-style: none;
 }
 
-.result-aqi {
+.result-aqi, .result-time {
     font-weight: bold;
 }
+
+.result-none {
+    text-align: center;
+}
+
+.result-flex {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.result-first, .result-second {
+    width: 45%;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
