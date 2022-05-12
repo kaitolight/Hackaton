@@ -4,52 +4,52 @@ function Legende() {
     return (
         <div>
             <div className="Legende">
-                <h2>Légende</h2>
+                <h2>Table de qualité de l'air</h2>
                 <table class="Table style">
                 <thead>
                     <tr>
-                    <th>AQI</th>
-                    <th>Air Pollution Level</th>
-                    <th>Health Implications</th>
-                    <th>Cautionary Statement (for PM2.5)</th>
+                    <th>IQA Indice de qualité de l'Air</th>
+                    <th>Niveau de pollution atmosphérique</th>
+                    <th>Incidences sur la santé</th>
+                    <th>Mise en garde (for PM2.5)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                     <td>0 - 50</td>
-                    <td>Good</td>
-                    <td>Air quality is considered satisfactory, and air pollution poses little or no risk</td>
-                    <td>None</td>
+                    <td>Bonne</td>
+                    <td>La qualité de l'air est considérée comme satisfaisante et la pollution de l'air présente peu ou pas de risque</td>
+                    <td>Aucun</td>
                     </tr>
                     <tr>
                     <td>51 -100</td>
-                    <td>Moderate</td>
-                    <td>Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</td>
-                    <td>Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.</td>
+                    <td>Modérée</td>
+                    <td>La qualité de l'air est acceptable; cependant, elle peut causés des problème de santé modéré pour un très petit nombre de personnes qui sont exceptionnellement sensibles à la pollution de l'air.</td>
+                    <td>Les enfants et les adultes actifs, ainsi que les personnes souffrant de maladies respiratoires, telles que l'asthme, doivent limiter les efforts extérieurs prolongés.</td>
                     </tr>
                     <tr>
                     <td>101-150</td>
-                    <td>Unhealthy for Sensitive Groups</td>
-                    <td>Members of sensitive groups may experience health effects. The general public is not likely to be affected.</td>
-                    <td>Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.</td>
+                    <td>Problèmatique pour les personnes sensibles</td>
+                    <td>Les personnes sensibles peuvent ressentir des effets nefaste liés à la pollution. Le reste de la population en revanche n'est pas affecté.</td>
+                    <td>Les enfants et les adultes actifs, ainsi que les personnes souffrant de maladies respiratoires, telles que l'asthme, doivent limiter les efforts extérieurs prolongés.</td>
                     </tr>
                     <tr>
                     <td>151-200</td>
-                    <td>Unhealthy</td>
-                    <td>Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects</td>
-                    <td>Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor exertion; everyone else, especially children, should limit prolonged outdoor exertion</td>
+                    <td>Néfaste pour la santé</td>
+                    <td>Tous le monde peut commencer à ressentir des effets néfaste sur sa santé. Les personnes sensible peuvent subir des néfaste encore plus conséquent.</td>
+                    <td>Les enfants et les adultes actifs, ainsi que les personnes souffrant de maladies respiratoires, telles que l'asthme, doivent éviter les efforts extérieurs prolongés. L'ensemble de la population en particulier les enfants, doivent limiter les efforts extérieurs prolongés.</td>
                     </tr>
                     <tr>
                     <td>201-300</td>
-                    <td>Very Unhealthy</td>
-                    <td>Health warnings of emergency conditions. The entire population is more likely to be affected.</td>
-                    <td>Active children and adults, and people with respiratory disease, such as asthma, should avoid all outdoor exertion; everyone else, especially children, should limit outdoor exertion.</td>
+                    <td>Très néfaste pour la santé</td>
+                    <td>Avertissements sanitaires des conditions d'urgence. Toute la population est plus susceptible d'être touchée.</td>
+                    <td>Les enfants et les adultes actifs, ainsi que les personnes souffrant de maladies respiratoires, telles que l'asthme, doivent éviter les efforts extérieurs. L'ensemble de la population en particulier les enfants, doivent limiter les efforts extérieurs prolongés.</td>
                     </tr>
                     <tr>
                     <td>300+</td>
-                    <td>Hazardous</td>
-                    <td>Health alert: everyone may experience more serious health effects</td>
-                    <td>Everyone should avoid all outdoor exertion</td>
+                    <td>Aléatoire</td>
+                    <td>Alerte santé : tout le monde peut être affécté des effets néfaste grave</td>
+                    <td>Tout le monde doit éviter tout effort extérieur</td>
                     </tr>
                 </tbody>
                 </table>
