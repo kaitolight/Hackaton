@@ -46,24 +46,24 @@
   padding-bottom: inherit;
 }
 h3 {
-    font-weight:bolder;
-    color:limegreen;
-  }
+  font-weight: bolder;
+  color: limegreen;
+}
 
-  @media screen and (max-width: 768px) {
-    .explication_section_tg {
-      padding: 1.6rem;
-    }
-    .home_bouton_tg{
-      border-radius: 3.5rem;
-      font-size: 1rem;
-      font-family: poppins;
-      font-weight: 800;
-      margin-bottom: 4rem;
-      padding: 1.4rem 4rem;
-      text-align: center;
-      color: black;
-      display: block;
-      border: solid limegreen;
-    }
+@media screen and (max-width: 768px) {
+  .explication_section_tg {
+    padding: 1.6rem;
   }
+  .home_bouton_tg {
+    border-radius: 3.5rem;
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    padding: 1.4rem 4rem;
+    text-align: center;
+    color: black;
+    display: block;
+    border: solid limegreen;
+  }
+}

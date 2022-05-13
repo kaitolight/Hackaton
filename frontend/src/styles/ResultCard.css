@@ -41,11 +41,11 @@ li {
 }
 
 .result-first > p {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .result-secondtitle {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 911.99px) {

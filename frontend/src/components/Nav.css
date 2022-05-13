@@ -1,45 +1,45 @@
 :root {
-    --light: rgb(255, 255, 255);
-    --dark: rgb(0, 0, 0);
-    --title-color: rgb(255, 255, 255);
-    --text-color: rgb(255, 255, 255);
-    --title-font: "Poppins", sans-serif;
-    --text-font: "Poppins", sans-serif;
-    --title-font-size: ;
-    --text-font-size: ;
-  }
+  --light: rgb(255, 255, 255);
+  --dark: rgb(0, 0, 0);
+  --title-color: rgb(255, 255, 255);
+  --text-color: rgb(255, 255, 255);
+  --title-font: "Poppins", sans-serif;
+  --text-font: "Poppins", sans-serif;
+  --title-font-size: ;
+  --text-font-size: ;
+}
+.nav_logo_mt {
+  height: 85px;
+  color: var(--light);
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+  margin-left: 0.6rem;
+  text-align: center;
+}
+.navbar_mt {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  min-height: 75px;
+  background-color: var(--light);
+  color: var(--light);
+  border-bottom: 1px solid limegreen;
+}
+
+@media screen and (max-width: 768px) {
   .nav_logo_mt {
-    height: 85px;
-    color: var(--light);
+    height: 70px;
     align-items: center;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     flex-grow: 1;
-    margin-left: 0.6rem;
-    text-align: center;
+    margin-left: -0.1rem;
   }
-  .navbar_mt {
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    min-height: 75px;
-    background-color: var(--light);
-    color: var(--light);
-    border-bottom: 1px solid limegreen;
-  }
-
-  @media screen and (max-width: 768px) {
-    .nav_logo_mt {
-      height: 70px;
-      align-items: center;
-      cursor: pointer;
-      flex-grow: 1;
-      margin-left: -0.1rem;
-    }
-  }
+}
