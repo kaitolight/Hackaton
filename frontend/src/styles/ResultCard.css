@@ -41,12 +41,21 @@ li {
 }
 
 .result-first > p {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .result-secondtitle {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
+
+.greenValue{color: green;}
+
+.yellowValue{color: yellow;}
+
+.orangeValue{color: orange;}
+
+.redValue{color: red;}
+
 
 @media (min-width: 911.99px) {
   .result-flex {
@@ -59,4 +68,5 @@ li {
     width: 50%;
     height: 60vh;
   }
+  
 }
