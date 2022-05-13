@@ -88,7 +88,7 @@ function Welcome() {
           l&apos;air par l&apos;ozone.
         </p>
       </section>
-      <Link to="/Research">
+      <Link to="/Search">
         <button type="button" className="home_bouton_tg">
           Rechercher Votre ville
         </button>
