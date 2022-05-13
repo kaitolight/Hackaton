@@ -3,10 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-}
-:root {
-  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1920 - 320));
 }
 /* body, */
 button,
@@ -22,10 +18,12 @@ input {
 .search-bar {
   display: flex;
 }
+
 /* body {
   background: #f1f1f1;
   height: 100vh;
 } */
+
 .search-bar input,
 .search-btn,
 .search-btn:before,
@@ -144,9 +142,6 @@ input {
   body,
   input {
     color: #f1f1f1;
-  }
-  body {
-    background: #171717;
   }
   .search-bar input {
     box-shadow: 0 0 0 0.4em #f1f1f1 inset;

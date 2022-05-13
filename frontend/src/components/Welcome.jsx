@@ -1,12 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
     <main className="home_main_tg">
       <section className="explication_section_tg">
-        <h2>TITLE</h2>
         <h3>Le Context</h3>
         <p>
           La pollution atmosphérique est l'un des plus grands risques
@@ -84,11 +82,6 @@ function Welcome() {
           dans l’air par l’ozone.
         </p>
       </section>
-      <Link to="/search">
-        <button type="button" className="home_bouton_tg">
-          Rechercher votre ville
-        </button>
-      </Link>
     </main>
   );
 }

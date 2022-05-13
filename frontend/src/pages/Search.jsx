@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ActionsSlider from "../components/ActionsSlider";
 import SliderData from "../components/SliderData";
-
 import ResultCard from "../components/ResultCard";
 import SearchBar from "../components/SearchBar";
 

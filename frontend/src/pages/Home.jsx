@@ -1,15 +1,16 @@
 import React from "react";
 import Welcome from "../components/Welcome";
-import "../styles/Home.css";
-
 import RedirectionButton from "../components/RedirectionButton";
+import Nav from "../components/Nav";
+
+import "../Home.css";
 
 export default function Home() {
   return (
-    <>
-      <div>HOME</div>
+    <div>
+      <Nav />
       <Welcome />
       <RedirectionButton />
-    </>
+    </div>
   );
 }

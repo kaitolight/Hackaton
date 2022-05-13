@@ -25,25 +25,27 @@
 
 .home_bouton_tg {
   background-color: white;
-  border-radius: 3.5rem;
-  font-size: 1.4rem;
-  font-family: poppins;
-  font-weight: 800;
-  margin-bottom: 4rem;
-  padding: 1.4rem 4rem;
-  text-align: center;
-  color: black;
-  display: block;
-  border: solid limegreen;
+    border-radius: 3.5rem;
+    font-size: 1.4rem;
+    font-family: poppins;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    padding: 1.4rem 3rem;
+    text-align: center;
+    color: black;
+    /* display: block; */
+    border: solid limegreen;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 5%);
 }
 .explication_section_tg {
-  margin-top: 8rem;
+  margin-top: 7.2rem;
   width: 100%;
   border: 0.9px solid white;
   padding: 5rem;
   justify-content: center;
   white-space: pre-line;
-  text-align: left;
+  text-align: center;
   padding-bottom: inherit;
 }
 h3 {
@@ -53,17 +55,5 @@ h3 {
 @media screen and (max-width: 768px) {
   .explication_section_tg {
     padding: 1.6rem;
-  }
-  .home_bouton_tg {
-    border-radius: 3.5rem;
-    font-size: 1rem;
-    font-family: poppins;
-    font-weight: 800;
-    margin-bottom: 4rem;
-    padding: 1.4rem 4rem;
-    text-align: center;
-    color: black;
-    display: block;
-    border: solid limegreen;
   }
 }

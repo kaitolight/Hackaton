@@ -28,7 +28,8 @@ export default function SearchBar({ setPullResult }) {
         id="searchbar"
         type="search"
         name="search"
-        placeholder="                          Search for your City"
+        placeholder=""
+        className="                         Search for your City"
         onChange={(e) => setCityName(e.target.value)}
         pattern=".*\S.*"
         required
