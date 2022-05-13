@@ -1,0 +1,91 @@
+.result-box {
+  margin: auto;
+  width: 90vw;
+  height: auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 29px 0px;
+}
+
+.result-title {
+  text-align: center;
+  font-size: clamp(1.2rem, 5.5vw, 5rem);
+  margin-bottom: 1rem;
+  color: #547D71
+}
+
+li {
+  padding-bottom: 0.5rem;
+  list-style: inside;
+}
+
+.result-aqi,
+.result-time {
+  font-weight: bold;
+}
+
+.result-none {
+  text-align: center;
+}
+
+.result-aqi{
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  
+  font-size: x-large;
+  font-weight: bold;}
+
+.result-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-first,
+.result-second {
+  width: 95%;
+  background-color: #F5F8F3;
+  padding: 1rem;
+}
+
+.result-first > p {
+  padding-bottom: 1rem;
+}
+
+.result-secondtitle {
+  padding-bottom: 1rem;
+}
+
+.greenValue{color: green;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.yellowValue{color:yellow;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: x-large;font-weight: bold;
+  ;
+ }
+
+.orangeValue{color: orange;font-size: x-large;font-weight: bold; -webkit-text-stroke: 1px;-webkit-text-stroke-color: black;}
+
+.redValue{color: red;font-size: x-large;font-weight: bold; -webkit-text-stroke: 1px;-webkit-text-stroke-color: black;}
+
+
+@media (min-width: 911.99px) {
+  .result-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .result-first,
+  .result-second {
+    width: 50%;
+    height: 60vh;
+  }
+  
+}

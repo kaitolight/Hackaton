@@ -1,0 +1,137 @@
+.slider {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 72px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 72px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  font-size: 1rem;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.quote-text {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .left-arrow {
+    
+    top: 50%;
+    left: 72px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .right-arrow {
+   
+    top: 50%;
+    right: 72px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  }
+  @media (min-width: 768px) {
+    .left-arrow {
+     
+      top: 50%;
+      left: 40px;
+      font-size: 3rem;
+      color: black;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+    .right-arrow {
+     
+      top: 50%;
+      right: 30px;
+      font-size: 3rem;
+      color: black;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+    }
+    @media (min-width: 576px) {
+      .left-arrow {
+        
+        top: 50%;
+        left: 10px;
+        font-size: 3rem;
+        color: black;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+      }
+      .right-arrow {
+       
+        top: 50%;
+        right: 10px;
+        font-size: 3rem;
+        color: black;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+      }
+      }
+      @media (max-width: 576px) {
+        .left-arrow {
+         
+          top: 50%;
+          left: 10px;
+          font-size: 3rem;
+          color: black;
+          z-index: 10;
+          cursor: pointer;
+          user-select: none;
+        }
+        .right-arrow {
+         
+          top: 50%;
+          right: 10px;
+          font-size: 3rem;
+          color: black;
+          z-index: 10;
+          cursor: pointer;
+          user-select: none;
+        }
+        }
+     
