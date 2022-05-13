@@ -54,37 +54,3 @@ code {
 button {
   font-size: calc(10px + 2vmin);
 }
-
-
-.table-style  {
-  border-collapse: collapse;
-  box-shadow: 0 5px 50px rgba(0,0,0,0.15);
-  cursor: pointer;
-  margin: 0px auto;
-  border: 2px solid rgb(47, 246, 190);
-}
-thead tr {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  text-align: left;
-}
-th, td {
-  padding: 15px 20px;
-  text-align: center;
-}
-tbody tr, td, th {
-  border: 1px solid #ddd;
-}
-tbody tr:nth-child(even){
-  background-color: #f3f3f3;
-}
-@media screen and (max-width: 550px) {
-}
-.table-style  {
-  width: 100%;
-  margin: 0px;
-  font-size: 10px;
-}
-th, td {
-  padding: 10px 7px;
-}
