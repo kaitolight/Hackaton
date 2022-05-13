@@ -1,4 +1,5 @@
 .button {
+  display: flex;
   align-items: center;
   background-color: initial;
   background-image: linear-gradient(#464d55, #25292e);
@@ -30,6 +31,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 .button:hover {

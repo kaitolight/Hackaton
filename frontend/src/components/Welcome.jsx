@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -84,11 +83,6 @@ function Welcome() {
           dans l’air par l’ozone.
         </p>
       </section>
-      <Link to="/search">
-        <button type="button" className="home_bouton_tg">
-          Rechercher votre ville
-        </button>
-      </Link>
     </main>
   );
 }

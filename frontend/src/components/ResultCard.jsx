@@ -43,37 +43,27 @@ export default function ResultCard({ pullResult }) {
           <ul>
             <li>
               {pullResult.iaqi && pullResult.iaqi.pm25.v
-                ? `Fine particulate matter (PM2.5) in ${
-                    pullResult.city && pullResult.city.name
-                  } : ${pullResult.iaqi.pm25.v} μg/m3`
+                ? `Fine particulate matter (PM2.5) in : ${pullResult.iaqi.pm25.v} μg/m3`
                 : null}{" "}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.pm10.v
-                ? `Coarse particulate matter (PM10) in ${
-                    pullResult.city && pullResult.city.name
-                  } : ${pullResult.iaqi.pm10.v} μg/m3`
+                ? `Coarse particulate matter (PM10) : ${pullResult.iaqi.pm10.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.no2.v
-                ? `Nitrogen dioxide (NO2) in ${
-                    pullResult.city && pullResult.city.name
-                  } : ${pullResult.iaqi.no2.v} μg/m3`
+                ? `Nitrogen dioxide (NO2) in : ${pullResult.iaqi.no2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.so2.v
-                ? `Sulfur dioxide (SO2) in ${
-                    pullResult.city && pullResult.city.name
-                  } : ${pullResult.iaqi.so2.v} μg/m3`
+                ? `Sulfur dioxide (SO2) in : ${pullResult.iaqi.so2.v} μg/m3`
                 : null}
             </li>
             <li>
               {pullResult.iaqi && pullResult.iaqi.o3.v
-                ? `Ozone (O3) in ${pullResult.city && pullResult.city.name} : ${
-                    pullResult.iaqi.o3.v
-                  } μg/m3`
+                ? `Ozone (O3) in : ${pullResult.iaqi.o3.v} μg/m3`
                 : null}
             </li>
           </ul>

@@ -48,7 +48,7 @@ li {
     padding-bottom: 1rem;
 }
 
-@media (min-width: 911.99px) {
+@media (min-width: 992px) {
   .result-flex {
     flex-direction: row;
     justify-content: space-around;
@@ -57,6 +57,6 @@ li {
   .result-first,
   .result-second {
     width: 50%;
-    height: 60vh;
+    height: 50vh;
   }
 }
