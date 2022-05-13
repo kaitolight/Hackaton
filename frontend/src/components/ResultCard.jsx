@@ -42,29 +42,29 @@ export default function ResultCard({ pullResult }) {
           </h4>
           <ul>
             <li>
-              {pullResult.iaqi && pullResult.iaqi.pm25.v
-                ? `Fine particulate matter (PM2.5) in : ${pullResult.iaqi.pm25.v} μg/m3`
-                : null}{" "}
+              {pullResult.iaqi && pullResult.iaqi.pm25
+                ? `Fine particulate matter (PM2.5) is ${pullResult.iaqi.pm25.v} μg/m3`
+                : "No available data for Fine particulate matter"}{" "}
             </li>
             <li>
-              {pullResult.iaqi && pullResult.iaqi.pm10.v
-                ? `Coarse particulate matter (PM10) : ${pullResult.iaqi.pm10.v} μg/m3`
-                : null}
+              {pullResult.iaqi && pullResult.iaqi.pm10
+                ? `Coarse particulate matter (PM10) is ${pullResult.iaqi.pm10.v} μg/m3`
+                : "No available data for Coarse particulate matter"}
             </li>
             <li>
-              {pullResult.iaqi && pullResult.iaqi.no2.v
-                ? `Nitrogen dioxide (NO2) in : ${pullResult.iaqi.no2.v} μg/m3`
-                : null}
+              {pullResult.iaqi && pullResult.iaqi.no2
+                ? `Nitrogen dioxide (NO2) is ${pullResult.iaqi.no2.v} μg/m3`
+                : "No available data for Nitrogen dioxide"}
             </li>
             <li>
-              {pullResult.iaqi && pullResult.iaqi.so2.v
-                ? `Sulfur dioxide (SO2) in : ${pullResult.iaqi.so2.v} μg/m3`
-                : null}
+              {pullResult.iaqi && pullResult.iaqi.so2
+                ? `Sulfur dioxide (SO2) is ${pullResult.iaqi.so2.v} μg/m3`
+                : "No available data for Sulfur Dioxiode"}
             </li>
             <li>
-              {pullResult.iaqi && pullResult.iaqi.o3.v
-                ? `Ozone (O3) in : ${pullResult.iaqi.o3.v} μg/m3`
-                : null}
+              {pullResult.iaqi && pullResult.iaqi.o3
+                ? `Ozone (O3) is ${pullResult.iaqi.o3.v} μg/m3`
+                : "No available data for Ozone"}
             </li>
           </ul>
         </div>
