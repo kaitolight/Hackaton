@@ -28,6 +28,13 @@ li {
   text-align: center;
 }
 
+.result-aqi{
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  
+  font-size: x-large;
+  font-weight: bold;}
+
 .result-flex {
   display: flex;
   align-items: center;
@@ -50,13 +57,23 @@ li {
   padding-bottom: 1rem;
 }
 
-.greenValue{color: green;}
+.greenValue{color: green;
+  font-size: x-large;
+  font-weight: bold;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
 
-.yellowValue{color: yellow;}
+.yellowValue{color:yellow;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: x-large;font-weight: bold;
+  ;
+ }
 
-.orangeValue{color: orange;}
+.orangeValue{color: orange;font-size: x-large;font-weight: bold; -webkit-text-stroke: 1px;-webkit-text-stroke-color: black;}
 
-.redValue{color: red;}
+.redValue{color: red;font-size: x-large;font-weight: bold; -webkit-text-stroke: 1px;-webkit-text-stroke-color: black;}
 
 
 @media (min-width: 911.99px) {

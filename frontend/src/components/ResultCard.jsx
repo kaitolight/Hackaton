@@ -17,6 +17,15 @@ export default function ResultCard({ pullResult }) {
     return "redValue";
   };
 
+  const classNameAqi = (data) => {
+    if (data < 50) return "#3CB371";
+    if (data < 100 && data >= 50) return "#DAA520";
+    if (data < 150 && data >= 100) return "#FF8C00";
+    if (data < 200 && data >= 150) return "#DC143C";
+    if (data < 300 && data >= 200) return "#4B0082";
+    return "#A52A2A";
+  };
+
   const classNamePM10 = (data) => {
     if (data < 30) return "greenValue";
     if (data < 75 && data >= 30) return "yellowValue";
@@ -53,9 +62,14 @@ export default function ResultCard({ pullResult }) {
       <div className="result-flex">
         <div className="result-first">
           <p>
-            The AQI (Air Quality Index) of the chosen city is{" "}
-            <span className="result-aqi">{pullResult.aqi}</span> and it was last
-            measured locally on the{" "}
+            The AQI (Air Quality Index) of the chosen city is :{" "}
+            <span
+              className="result-aqi"
+              style={{ color: classNameAqi(pullResult.aqi) }}
+            >
+              {pullResult.aqi}
+            </span>{" "}
+            last measured locally on the{" "}
             <span className="result-time">
               {pullResult.time && pullResult.time.s}
             </span>

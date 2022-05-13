@@ -13,7 +13,10 @@ export default function SearchBar({ setPullResult }) {
         .get(
           `https://api.waqi.info/feed/${cityName}/?token=46bdfa85cf04065de4cc0b08651742ae14c48256`
         )
-        .then((result) => setPullResult(result.data.data));
+        .then((result) => {
+          if (result.data.data !== "Unknown station")
+            setPullResult(result.data.data);
+        });
     }
   };
 
