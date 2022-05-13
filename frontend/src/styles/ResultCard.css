@@ -48,6 +48,15 @@ li {
   padding-bottom: 1rem;
 }
 
+.greenValue{color: green;}
+
+.yellowValue{color: yellow;}
+
+.orangeValue{color: orange;}
+
+.redValue{color: red;}
+
+
 @media (min-width: 911.99px) {
   .result-flex {
     flex-direction: row;
@@ -59,4 +68,5 @@ li {
     width: 50%;
     height: 60vh;
   }
+  
 }
