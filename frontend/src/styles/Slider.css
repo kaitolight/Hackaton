@@ -12,7 +12,7 @@
   top: 50%;
   right: 72px;
   font-size: 3rem;
-  color: white;
+  color: black;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -23,7 +23,7 @@
   top: 50%;
   left: 72px;
   font-size: 3rem;
-  color: white;
+  color: black;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -52,7 +52,7 @@
     top: 50%;
     left: 72px;
     font-size: 3rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -62,7 +62,7 @@
     top: 50%;
     right: 72px;
     font-size: 3rem;
-    color: white;
+    color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -74,7 +74,7 @@
       top: 50%;
       left: 40px;
       font-size: 3rem;
-      color: white;
+      color: black;
       z-index: 10;
       cursor: pointer;
       user-select: none;
@@ -84,7 +84,7 @@
       top: 50%;
       right: 30px;
       font-size: 3rem;
-      color: white;
+      color: black;
       z-index: 10;
       cursor: pointer;
       user-select: none;
@@ -96,7 +96,7 @@
         top: 50%;
         left: 10px;
         font-size: 3rem;
-        color: white;
+        color: black;
         z-index: 10;
         cursor: pointer;
         user-select: none;
@@ -106,7 +106,7 @@
         top: 50%;
         right: 10px;
         font-size: 3rem;
-        color: white;
+        color: black;
         z-index: 10;
         cursor: pointer;
         user-select: none;
@@ -118,7 +118,7 @@
           top: 50%;
           left: 10px;
           font-size: 3rem;
-          color: white;
+          color: black;
           z-index: 10;
           cursor: pointer;
           user-select: none;
@@ -128,7 +128,7 @@
           top: 50%;
           right: 10px;
           font-size: 3rem;
-          color: white;
+          color: black;
           z-index: 10;
           cursor: pointer;
           user-select: none;

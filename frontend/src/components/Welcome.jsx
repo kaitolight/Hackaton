@@ -5,7 +5,6 @@ function Welcome() {
   return (
     <main className="home_main_tg">
       <section className="explication_section_tg">
-        <h2>TITLE</h2>
         <h3>Le Context</h3>
         <p>
           La pollution atmosphérique est l'un des plus grands risques

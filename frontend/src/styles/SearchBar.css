@@ -1,24 +1,17 @@
-:root {
-  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1920 - 320));
-}
-/* body, */
 button,
 input {
   font: 1em Hind, sans-serif;
   line-height: 1.5em;
 }
-/* body, */
+
 input {
   color: #171717;
 }
-/* body, */
+
 .search-bar {
   display: flex;
 }
-/* body {
-  background: #f1f1f1;
-  height: 100vh;
-} */
+
 .search-bar input,
 .search-btn,
 .search-btn:before,
@@ -110,7 +103,6 @@ input {
   height: 1px;
 }
 
-/* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
   background: #547D71;
