@@ -32,7 +32,6 @@
   padding: 1.4rem 4rem;
   text-align: center;
   color: black;
-  display: block;
   border: solid limegreen;
 }
 .explication_section_tg {
@@ -63,7 +62,6 @@ h3 {
     padding: 1.4rem 4rem;
     text-align: center;
     color: black;
-    display: block;
     border: solid limegreen;
   }
 }
