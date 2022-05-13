@@ -4,6 +4,7 @@ import SliderData from "../components/SliderData";
 
 import ResultCard from "../components/ResultCard";
 import SearchBar from "../components/SearchBar";
+import Legende from "../components/Legende";
 
 function Search() {
   const [pullResult, setPullResult] = useState([]);
@@ -12,6 +13,7 @@ function Search() {
     <div>
       <SearchBar setPullResult={setPullResult} />
       <ResultCard pullResult={pullResult} />
+      <Legende pullResult={pullResult} />
       <ActionsSlider slides={SliderData} pullResult={pullResult} />
     </div>
   );
