@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 
-export default function SearchBar() {
+import "../styles/SearchBar.css";
+
+export default function SearchBar({ setPullResult }) {
   const [cityName, setCityName] = useState("");
-  const [pullResult, setPullResult] = useState([]);
 
   const getCity = (city) => {
     if (city.length >= 1) {
@@ -20,20 +22,24 @@ export default function SearchBar() {
     getCity(cityName);
   };
 
-  useEffect(() => {
-    // eslint-disable-next-line no-restricted-syntax
-    console.log(pullResult);
-  }, [pullResult]);
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="search-bar">
       <input
         id="searchbar"
         type="search"
         name="search"
-        placeholder="Search for your City"
+        placeholder="                          Search for your City"
         onChange={(e) => setCityName(e.target.value)}
+        pattern=".*\S.*"
+        required
       />
+      <button className="search-btn" type="submit">
+        <span>Search</span>
+      </button>
     </form>
   );
 }
+
+SearchBar.propTypes = {
+  setPullResult: PropTypes.func.isRequired,
+};
